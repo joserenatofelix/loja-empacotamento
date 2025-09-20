@@ -120,3 +120,5 @@ Renato Félix
 📄 Licença
 
 MIT License
+
+<img width="988" height="907" alt="image" src="https://github.com/user-attachments/assets/62671f71-ba19-413c-beac-ae8a9fd1851e" />
