@@ -1,0 +1,96 @@
+# =========================
+# Node.js & NestJS
+# =========================
+
+# Dependências
+/node_modules
+
+# Build e compilados
+/dist
+/build
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.pid.lock
+*.seed
+
+# Cobertura de testes
+/coverage
+/.nyc_output
+
+# Test reports
+test-report.xml
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDEs e editores
+# =========================
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# =========================
+# Ambiente e secrets
+# =========================
+.env
+.env.*.local
+.env.production.local
+.env.test.local
+.env.development.local
+
+# =========================
+# Temp
+# =========================
+.temp
+.tmp
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+docker-compose.local.yml
+**/Dockerfile.*
+
+# =========================
+# Node diagnostic reports
+# =========================
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# =========================
+# JWT & secrets
+# =========================
+*.key
+*.pem
+*.cert
+
+# =========================
+# Outros
+# =========================
+.idea
+*.swp

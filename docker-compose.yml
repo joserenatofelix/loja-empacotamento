@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: loja-empacotamento
+    environment:
+      NODE_ENV: production
+      JWT_SECRET: "MINHA_CHAVE_SECRETA" # substitua por segredo real em produção
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app # útil para desenvolvimento; remove em produção
+      - /app/node_modules
+    command: npm run start:prod
