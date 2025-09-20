@@ -49,76 +49,79 @@ API para empacotar pedidos em caixas disponíveis, com autenticação JWT, teste
 
 ## 🖥️ Rodando localmente
 
-```bash
-# Instalar dependências
+### Instalar dependências
+```
 npm install
-
-# Desenvolvimento
+```
+### Desenvolvimento
+```
 npm run start:dev
-
-# Produção
+```
+### Produção
+```
 npm run start:prod
-
+```
+---
+### API: http://localhost:3000
+### Swagger: http://localhost:3000/api
 ---
 
-API: http://localhost:3000
+## 🐳 Docker
 
-Swagger: http://localhost:3000/api
+- Dockerfile já configurado com build em duas etapas (build + produção).
 
-🐳 Docker
-
-Dockerfile já configurado com build em duas etapas (build + produção).
-
-# Build da imagem
+#### Build da imagem
+```
 docker build -t loja-empacotamento .
-
-# Rodar container
+```
+### Rodar container
+```
 docker run -p 3000:3000 -e JWT_SECRET=MINHA_CHAVE_SECRETA loja-empacotamento
+```
 
+- A variável de ambiente JWT_SECRET é necessária em produção
+- Porta padrão: 3000
+---
 
-A variável de ambiente JWT_SECRET é necessária em produção
-
-Porta padrão: 3000
-
-🧪 Testes Unitários
-# Executa todos os testes unitários
+## 🧪 Testes Unitários
+### Executa todos os testes unitários
+```
 npm run test
+```
 
-# Executa testes em modo watch
+### Executa testes em modo watch
+```
 npm run test:watch
+```
+### Cobertura de testes
 
-# Cobertura de testes
+```
 npm run test:cov
+```
 
+- Os testes estão localizados na pasta test/
+- Serviço principal testado: PackingService
+---
 
-Os testes estão localizados na pasta test/
+## 📖 Swagger
 
-Serviço principal testado: PackingService
+- Acesse http://localhost:3000/api
+- Visualize e teste todos os endpoints
+- Use Authorize para rotas protegidas
+- Swagger gera exemplos de request e response automaticamente
 
-📖 Swagger
+## 💡 Observações
 
-Acesse http://localhost:3000/api
+- Empacotamento e lógica de caixas são gerenciados pelo serviço PackingService
+- Testes unitários cobrem funcionalidades de empacotamento
+- JWT é obrigatório para acessar rotas protegidas
 
-Visualize e teste todos os endpoints
+## 👤 Autor
 
-Use Authorize para rotas protegidas
-
-Swagger gera exemplos de request e response automaticamente
-
-💡 Observações
-
-Empacotamento e lógica de caixas são gerenciados pelo serviço PackingService
-
-Testes unitários cobrem funcionalidades de empacotamento
-
-JWT é obrigatório para acessar rotas protegidas
-
-👤 Autor
-
-Renato Félix
+**Renato Félix**
 
 📄 Licença
 
-MIT License
-
+- MIT License
+  
 <img width="988" height="907" alt="image" src="https://github.com/user-attachments/assets/62671f71-ba19-413c-beac-ae8a9fd1851e" />
