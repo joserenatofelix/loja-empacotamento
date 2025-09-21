@@ -33,7 +33,7 @@ API para empacotar pedidos em caixas disponíveis, com autenticação JWT, teste
 
 | Endpoint | Método | Protegido | Descrição | Exemplo Request | Exemplo Response |
 |----------|--------|-----------|-----------|----------------|----------------|
-| `/auth/login` | POST | ❌ | Autentica usuário e retorna JWT | `{ "username": "admin", "password": "1234" }` | `{ "access_token": "TOKEN_JWT_AQUI" }` |
+| `/auth/login` | POST | ✅ | Autentica usuário e retorna JWT | `{ "username": "admin", "password": "1234" }` | `{ "access_token": "TOKEN_JWT_AQUI" }` |
 | `/` | GET | ✅ | Retorna mensagem de boas-vindas | Header `Authorization: Bearer <TOKEN>` | `Hello World!` |
 
 ---
