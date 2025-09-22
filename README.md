@@ -1,6 +1,10 @@
 <p align="center">
-  <a href="https://nestjs.com/" target="_blank">
-    <img src="https://nestjs.com/img/logo-small.svg" width="120" alt="NestJS Logo" />
+  <a href="https://nodejs.org/" target="_blank">
+    <img src="https://nodejs.org/static/images/logo.svg" width="120" alt="Node.js Logo" />
+  </a>
+  &nbsp;&nbsp;&nbsp; <!-- Espaço -->  
+  <a href="https://nextjs.org/" target="_blank">
+    <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" width="120" alt="Next.js Logo" />
   </a>
 </p>
 
@@ -20,13 +24,12 @@ API para empacotar pedidos em caixas disponíveis, com autenticação JWT, teste
 
 ## ✨ Tecnologias
 
-- [NestJS](https://nestjs.com/)
-- Node.js 18
-- TypeScript
-- Docker
-- Jest (testes unitários)
-- Swagger (documentação interativa)
-
+- [Node.js](https://www.nodejs.tech/pt-br)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Docker](https://www.docker.com/)
+- [Jest](https://jestjs.io/)
+- [Swagger](https://swagger.io/)
 ---
 
 ## 🚀 Endpoints da API
