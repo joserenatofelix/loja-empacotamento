@@ -61,15 +61,11 @@ describe('PackingService', () => {
     const orders: OrderDto[] = [
       {
         orderId: 'o1',
-        products: [
-          { id: 'a', height: 10, width: 20, length: 30 },
-        ],
+        products: [{ id: 'a', height: 10, width: 20, length: 30 }],
       },
       {
         orderId: 'o2',
-        products: [
-          { id: 'b', height: 5, width: 5, length: 5 },
-        ],
+        products: [{ id: 'b', height: 5, width: 5, length: 5 }],
       },
     ];
 

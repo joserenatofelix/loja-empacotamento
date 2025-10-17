@@ -40,9 +40,7 @@ function canFitSingle(
   ];
   return perms.some(
     (perm) =>
-      perm[0] <= boxDims[0] &&
-      perm[1] <= boxDims[1] &&
-      perm[2] <= boxDims[2],
+      perm[0] <= boxDims[0] && perm[1] <= boxDims[1] && perm[2] <= boxDims[2],
   );
 }
 
@@ -109,7 +107,9 @@ export class PackingService {
           id: chosen.id,
           name: chosen.name,
           dims: chosen.dims as [number, number, number],
-          capacityVolume: volumeFromDims(chosen.dims as [number, number, number]),
+          capacityVolume: volumeFromDims(
+            chosen.dims as [number, number, number],
+          ),
           usedVolume: prod.volume,
           productIds: [prod.id],
         };

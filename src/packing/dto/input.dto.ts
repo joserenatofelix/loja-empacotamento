@@ -1,10 +1,6 @@
 // src/dto/packing-request.dto.ts
 import { ApiProperty } from '@nestjs/swagger';
-import {
-  IsArray,
-  ValidateNested,
-  IsString,
-} from 'class-validator';
+import { IsArray, ValidateNested, IsString } from 'class-validator';
 import { Type } from 'class-transformer';
 import { ProductDto } from './product.dto';
 

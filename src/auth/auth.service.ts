@@ -9,8 +9,8 @@ export class AuthService {
 
   /**
    * Valida usuário
-   * @param username 
-   * @param password 
+   * @param username
+   * @param password
    * @returns usuário válido ou null
    */
   async validateUser(username: string, password: string) {
@@ -18,7 +18,10 @@ export class AuthService {
     const hardcodedUser = { username: 'admin', password: '1234' };
 
     // Comparação simples (em produção, use bcrypt para hash)
-    if (username === hardcodedUser.username && password === hardcodedUser.password) {
+    if (
+      username === hardcodedUser.username &&
+      password === hardcodedUser.password
+    ) {
       const { password, ...result } = hardcodedUser; // remove senha
       return result;
     }
